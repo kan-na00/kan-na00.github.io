@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* 全体設定 */
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a7a55;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #2a7a55;
+}
+
+/* ===== ヒーローセクション ===== */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 70px; /* fixed header 対応 */
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    color: #2a7a55;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2a7a55;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #256648;
+}
+
+/* ===== フッター ===== */
+.footer {
+    background: #2a2a2a;
+    color: #eee;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left h3 {
+    margin-top: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 8px;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+
+/*-----------------------------------
+スマホ
+-----------------------------------*/
+@media screen and (max-width: 430px) {
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  /* ---------------------ヘッダー */
+
+  header .inner {
+    height: 80px;
+  }
+
+  header .logo {
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .logo a {
+    font-size: 6rem;
+  }
+
+  #about header h1 {
+    margin: 0;
+  }
+
+  header .menu-btn {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 10px;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #666;
+    background: transparent;
+    border-radius: 50%;
+  }
+
+  .menu-btn:focus {
+    outline: none;
+  }
+
+  header .header-nav {
+    width: 250px;
+    position: fixed;
+    display: block;
+    top: 80px;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, .8);
+    transition: all 0.2s;
+    transform: translate(250px);
+  }
+
+  header .header-nav.open {
+    transform: translate(0);
+  }
+
+  header .header-nav ul {
+    display: block;
+  }
+
+  header .header-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /*-----------------------フッター*/
+
+  footer {
+    padding: 30px 0 0;
+  }
+
+  footer .logo {
+    font-size: 8rem;
+  }
+
+  footer .wrap-blk {
+    display: block;
+    margin: 0 0 30px;
+  }
+
+  footer .wrap-blk p {
+    width: 94%;
+    margin: 0 auto 30px;
+    text-align: left;
+  }
+
+  footer .wrap-blk ul {
+    width: 94%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+  }
+
+  footer .copyright {
+    padding: 30px 0;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+}

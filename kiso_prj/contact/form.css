@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* 共通ヘッダー（indexと同じ） */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a7a55;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #2a7a55;
+}
+
+/* ===== メイン ===== */
+.contact-main {
+    padding-top: 120px; /* fixed header 分 */
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #2a7a55;
+    margin-bottom: 10px;
+}
+
+.contact-desc {
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ===== フォーム ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #2a7a55;
+    outline: none;
+    box-shadow: 0 0 3px rgba(42,122,85,0.3);
+}
+
+.btn-submit {
+    background-color: #2a7a55;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-submit:hover {
+    background-color: #256648;
+}
+
+/* ===== 共通フッター（indexと同じ） ===== */
+.footer {
+    background: #2a2a2a;
+    color: #eee;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left h3 {
+    margin-top: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 8px;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+
+
+/*-------------------------------
+スマホ
+-------------------------------*/
+
+@media screen and (max-width: 430px) {
+  #contact #page-title {
+    top: 80px;
+    padding: 30px 0;
+  }
+
+  #contact #page-title h1,
+  #contact #page-title .lead {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  #contact #page-title h1 {
+    margin: 0 auto 30px;
+    font-size: 2.7rem;
+  }
+
+  #contact .form-blk {
+    margin: 358px 0 0;
+    padding: 30px 0;
+  }
+
+  #contact .form-blk .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  #contact form table {
+    width: 100%;
+  }
+
+  #contact form th {
+    display: block;
+    width: 100%;
+    padding: 0 0 10px;
+  }
+
+  #contact form td {
+    display: block;
+    width: 100%;
+    padding: 0 0 30px;
+  }
+
+  #contact input#your-name,
+  #contact input#phone-num,
+  #contact input#e-mail {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  #contact select {
+    font-size: 1.6rem;
+    width: 3em;
+  }
+
+  #contact select#day,
+  #contact select#time {
+    margin: 0 0 0 1em;
+  }
+
+  #contact textarea {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  #contact .notes {
+    margin: 0 0 30px;
+    font-size: 1.4rem;
+  }
+
+  #contact input#btn-submit {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0;
+  }
+}
+

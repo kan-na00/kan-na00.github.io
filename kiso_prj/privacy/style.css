@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* ===== 共通ヘッダー ===== */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a7a55;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li { margin-left: 20px; }
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #2a7a55;
+}
+
+/* ===== ヒーロー ===== */
+.privacy-hero {
+    margin-top: 70px;
+    background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.privacy-hero h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* ===== メイン ===== */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: #2a7a55;
+}
+
+/* ===== フッター（共通） ===== */
+.footer {
+    background: #2a2a2a;
+    color: #eee;
+    padding: 40px 0 20px;
+}
+
+.footer-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.7;
+}

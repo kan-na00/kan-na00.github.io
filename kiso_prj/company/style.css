@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== 共通ヘッダー ===== */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a7a55;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #2a7a55;
+}
+
+
+/* ===== ヒーロー ===== */
+.hero-about {
+    margin-top: 70px;
+    height: 35vh;
+    background: url("https://images.unsplash.com/photo-1669003152238-5bd17a5bb19c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-about-content {
+    background: rgba(255,255,255,0.8);
+    padding: 35px 60px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-about h1 {
+    margin: 0 0 10px;
+    color: #2a7a55;
+}
+
+/* ===== 見出し ===== */
+h2 {
+    font-size: 1.8rem;
+    color: #2a7a55;
+    margin-bottom: 20px;
+}
+
+/* ===== セクション共通 ===== */
+.company-overview {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.message {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.philosophy {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.history {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+/* ===== 会社概要 ===== */
+.overview-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.overview-table th,
+.overview-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.overview-table th {
+    width: 200px;
+    background: #f6f6f6;
+    text-align: left;
+}
+
+/* ===== 代表挨拶 ===== */
+.message-box {
+    background: #fafafa;
+    border-left: 5px solid #2a7a55;
+    padding: 20px 25px;
+    border-radius: 4px;
+
+}
+
+.message-name {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+    
+}
+
+/* ===== 経営理念 ===== */
+.philosophy ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* ===== 沿革 ===== */
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.history-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.history-list span {
+    font-weight: bold;
+    color: #2a7a55;
+}
+
+/* ===== フッター ===== */
+.footer {
+    background: #2a2a2a;
+    color: #eee;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left h3 {
+    margin-top: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 8px;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}

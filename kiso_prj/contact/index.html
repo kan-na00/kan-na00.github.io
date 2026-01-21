@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>お問い合わせ | エコテック土地開発</title>
+    <meta name="description" content="「エコテック土地開発」の「お問い合わせ」のページです。">
+    <meta name="keywords" content="エコテック,土地開発,土地活用,土地買取">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('.menu-btn').click(function(){
+          $('.header-nav').toggleClass('open');
+        });
+        $('.header-nav a').click(function(){
+          $('.header-nav').toggleClass('open');
+        });
+      })
+    </script>
+</head>
+
+<body id="contact">
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">合同会社エコテック土地開発</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/index.html">ホーム</a></li>
+                    <li><a href="/about/index.html">事業内容</a></li>
+                    <li><a href="/achievements/index.html">業務実績</a></li>
+                    <li><a href="/company/index.html">企業情報</a></li>
+                    <li><a href="index.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== メイン ===== -->
+    <main class="contact-main">
+        <div class="container">
+
+            <h1 class="contact-title">お問い合わせ</h1>
+            <p class="contact-desc">
+                物件のご相談、事業に関するお問い合わせ、その他ご質問を承っております。  
+                下記フォームへ必要事項をご入力ください。
+            </p>
+
+            <form class="contact-form">
+                <label for="name">お名前 *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="category">お問い合わせ項目 *</label>
+                <select id="category" name="category" required>
+                    <option value="">選択してください</option>
+                    <option value="物件について">物件について</option>
+                    <option value="事業提携">事業提携</option>
+                    <option value="採用について">採用について</option>
+                    <option value="その他">その他</option>
+                </select>
+
+                <label for="message">お問い合わせ内容 *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="btn-submit">送信する</button>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- ===== フッター（index共通） ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3>合同会社エコテック土地開発</h3>
+                <p>持続可能な未来を創造する土地開発企業。</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="/gaiyou/index.html">会社概要</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="/privacy/index.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 EcoTech Land Development LLC.</p>
+    </footer>
+
+</body>
+</html>
